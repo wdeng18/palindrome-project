@@ -42,28 +42,12 @@ main:
     // First make sure to remove all spaces
     bl remove_space
 
-    // TEST removed special characters and blank spaces
-    /*
-	mov x1, x19
-	ldr x0, =output_specifier
-	bl printf
-	*/
-	// TEST removed special characters and blank spaces
-
     // Reset the counter
     mov x20, #0
 
     // Then traverse and change to lower case
     bl string_traverse
-
-	// TEST that all upper case are lower case
-	/*
-	mov x1, x19
-	ldr x0, =output_specifier
-	bl printf
-	*/
-	// TEST that all upper case are lower case
-
+    
     // Return from branch link and then check for midpoint
     mov x22, #0
 
